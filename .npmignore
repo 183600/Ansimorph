@@ -1,0 +1,13 @@
+# 源码（只发布编译产物）
+src/
+tsconfig.json
+.gitignore
+.github/
+node_modules/
+*.tgz
+
+# 开发文件
+.env
+.env.*
+.vscode/
+.idea/
