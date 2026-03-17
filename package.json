@@ -1,12 +1,51 @@
 {
   "name": "ansimorph",
-  "version": "1.0.0",
-  "description": "LLM-powered TUI Agent",
+  "version": "0.1.0",
+  "description": "🤖 LLM-powered TUI Agent — AI fully controls your terminal",
+  "keywords": [
+    "tui",
+    "terminal",
+    "llm",
+    "agent",
+    "ai",
+    "cli",
+    "openai",
+    "gpt",
+    "interactive",
+    "ansi"
+  ],
+  "author": "qwe12345678 zhongwenjia2009@163.com",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/183600/ansimorph.git"
+  },
+  "homepage": "https://github.com/183600/ansimorph#readme",
+  "bugs": {
+    "url": "https://github.com/183600/ansimorph/issues"
+  },
   "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "ansimorph": "./bin/ansimorph.js"
+  },
+  "files": [
+    "dist",
+    "bin",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "scripts": {
     "build": "tsc",
-    "start": "tsc && node dist/index.js",
-    "dev": "npx tsx src/index.ts"
+    "dev": "npx tsx src/index.ts",
+    "start": "node dist/index.js",
+    "prepublishOnly": "npm run build",
+    "clean": "rm -rf dist",
+    "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
     "typescript": "^5.5.0",
