@@ -1,0 +1,16 @@
+{
+  "name": "ansimorph",
+  "version": "1.0.0",
+  "description": "LLM-powered TUI Agent",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "tsc && node dist/index.js",
+    "dev": "npx tsx src/index.ts"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0",
+    "@types/node": "^22.0.0",
+    "tsx": "^4.16.0"
+  }
+}
